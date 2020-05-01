@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body align="center">
+    <h2 style="margin-bottom: 30px">Welcome Back!</h2><br>
+
+    <h1>There are {{ word }} words in your text!</h1>
+
+    <h3>Your Text:</h3>
+    {{fulltext}}
+    <h3>The length of the text is:</h3>
+    {{length}}
+
+    <h3>You have entered those words</h3>
+    {% for key,value in wordslist %}
+    {{ key }} - {{ value }}<br>
+    {% endfor %}
+  </body>
+</html>
